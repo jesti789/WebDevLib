@@ -1,0 +1,44 @@
+.button-3 {
+  position: relative;
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: clamp(2.875rem, 8vw, 3.5rem);
+  padding: 0 3rem;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* static orange corner */
+.button-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 35px solid var(--primary, #e63900);
+  border-top: 35px solid transparent;
+  z-index: 2;
+}
+
+/* animated orange layer */
+.button-3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--primary, #e63900);
+  transform-origin: bottom left;   /* grow from corner */
+  transform: scale(0);
+  transition: transform 0.8s ease-in-out;
+  z-index: 0;
+}
+
+.button-3:hover::after {
+  transform: scale(1);
+}

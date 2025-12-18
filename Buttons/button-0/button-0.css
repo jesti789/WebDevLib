@@ -1,0 +1,43 @@
+/*  ============================================
+                   Button 0                   
+    ============================================ */
+.button-0 
+{
+    text-align: center;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    min-width: 10.875rem;
+    margin: auto;
+    color: #fff;
+    padding: 0 2rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: #f15a24;
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+    z-index: 1;
+    transform: skew(-10deg);
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+.button-0 .icon
+{
+    transition: transform 0.3s;
+}
+.button-0:hover
+{
+    background-color: #1a1a1a;
+    box-shadow: 4px 4px 0px 0px var(--primary);
+}
+.button-0:hover .icon
+{
+    transform: translateX(0.25rem);
+}

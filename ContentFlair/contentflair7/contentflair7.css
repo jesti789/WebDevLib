@@ -1,0 +1,90 @@
+/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
+#button-box-837 {
+    width: 100%;
+    max-width: 39.375rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+#button-box-837 .cs-link {
+    text-decoration: none;
+    padding-right: 1.875rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+#button-box-837 .cs-link:hover:before {
+    width: 100%;
+    height: 3.5em;
+    border-radius: 1.875rem;
+}
+#button-box-837 .cs-link:hover .cs-wrapper {
+    transform: scale(1.2);
+}
+#button-box-837 .cs-link:hover .cs-icon {
+    transform: translateX(0.4375rem);
+}
+#button-box-837 .cs-link:before {
+    /* light green circle that animates on hover */
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background: #eff1f0;
+    border-radius: 1.5rem;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition:
+        width 0.3s,
+        height 0.3s,
+        border-radius 0.3s;
+}
+#button-box-837 .cs-wrapper {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    transition: transform 0.3s;
+}
+#button-box-837 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+#button-box-837 .cs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+#button-box-837 .cs-header {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+}
+#button-box-837 .cs-link-content {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+}
+
+                                
